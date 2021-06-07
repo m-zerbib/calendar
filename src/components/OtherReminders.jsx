@@ -1,6 +1,6 @@
 import React from "react";
 
-class WeeklyReminders extends React.Component {
+class OtherReminders extends React.Component {
 
   render() {
     
@@ -13,4 +13,4 @@ class WeeklyReminders extends React.Component {
 
 }
 
-export default WeeklyReminders;
+export default OtherReminders;

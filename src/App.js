@@ -1,7 +1,8 @@
 import React from 'react';
 import MyMonthlyCalendar from './components/MyMonthlyCalendar';
-import DailyReminders from './components/DailyReminders';
-import WeeklyReminders from './components/WeeklyReminders';
+import RemindersCell from './components/RemindersCell';
+import OtherReminders from './components/OtherReminders';
+import Reminders from './components/Reminders';
 
 
 const App = () => {
@@ -15,15 +16,18 @@ const App = () => {
         </div>
 
         <div className="six wide column">
-
           <div>
-            <DailyReminders />
+            <Reminders />
+          </div>
+          <div className="ui horizontal divider"></div>
+          <div>
+            <RemindersCell header="Due Today:"/>
           </div>
 
           <div className="ui horizontal divider"></div>
 
           <div>
-            <WeeklyReminders />
+            <RemindersCell header="Future Reminders:" />
           </div>
 
         </div>
